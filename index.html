@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Gaming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header>
+        <nav>
+            
+            
+            <span>Expert Gaming</span>
+            <button class="sign-in" onclick="window.location.href='login.html'">Sign In</button>
+            <button class="sign-up" onclick="window.location.href='signup.html'">Sign Up</button>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section class="hero">
+            <h2>Get Coached by the Best in Valorant, League of Legends, Rocket League</h2>
+            <div class="search-bar">
+                <select>
+                    <option>Select your game</option>
+                    <option value="valorant">Valorant</option>
+                    <option value="league-of-legends">League of Legends</option>
+                    <option value="rocket-league">Rocket League</option>
+                    <option value="csgo">CS:GO</option>
+                    <option value="dota-2">Dota 2</option>
+                    <option value="fortnite">Fortnite</option>
+                </select>
+                <input type="number" placeholder="Budget (€)">
+                <input type="number" placeholder="Number of hours">
+                <a><button class="find-coach">Find a Coach</button></a>
+            </div>
+        </section>
+
+        <!-- Section de sélection des coachs -->
+        <div class="coach-list">
+    <h2>Select Your Coach</h2>
+    <div class="coach-container">
+       
+        <div class="coach-card">
+            <a href="coach-alex.html">
+            <img src="images/alex.jpg" alt="Coach Alex">
+            </a>
+            <h3>Coach Alex</h3>
+            <p>Expert in Valorant</p>
+            <a href="booking.html" class="book-session">Book a Session</a>
+        </div>
+
+        
+        
+        <div class="coach-card">
+            <a href="coach-sam.html">
+            <img src="images/sam.jpg" alt="Coach Sam">
+            </a>
+            <h3>Coach Sam</h3>
+            <p>Challenger in League of Legends</p>
+            <a href="booking.html" class="book-session">Book a Session</a>
+        </div>
+
+        
+        <div class="coach-card">
+            <a href="coach-mia.html">
+            <img src="images/mia.jpg" alt="Coach Mia">
+            </a>
+            <h3>Coach Mia</h3>
+            <p>Expert in Rocket League</p>
+            <a href="booking.html" class="book-session">Book a Session</a>
+        </div>
+        
+        
+        <div class="coach-card">
+            <a href="coach-luke.html">
+            <img src="images/luke.jpg" alt="Coach Luke">
+            </a>
+            <h3>Coach Luke</h3>
+            <p>Global Player in CS:GO</p>
+            <a href="booking.html" class="book-session">Book a Session</a>
+        </div>
+        
+       
+        <div class="coach-card">
+            <a href="coach-sarah.html">
+            <img src="images/sarah.jpg" alt="Coach Sarah">
+            </a>
+            <h3>Coach Sarah</h3>
+            <p>Expert in Dota 2 and LoL</p>
+            <a href="booking.html" class="book-session">Book a Session</a>
+        </div>
+        
+        
+        <div class="coach-card">
+            <a href="coach-tom.html">
+            <img src="images/tom.jpg" alt="Coach Tom">
+            </a>
+            <h3>Coach Tom</h3>
+            <p>Expert in Fortnite</p>
+            <a href="booking.html" class="book-session">Book a Session</a>
+        </div>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="header-container"></div>
+
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-container").innerHTML = data;
+            });
+    });
+</script>
+
+
+</body>
+<header class="site-header">
+    <a href="index.html" class="logo">Expert Gaming</a>
+    <div class="auth-buttons">
+        <a href="login.html" class="button">Sign In</a>
+        <a href="signup.html" class="button">Sign Up</a>
+    </div>
+</header>
+
+
+</html>
+
+
+<button onclick="findCoach()">Find a Coach</button>
+    </div>
+
+     <script>
+        function findCoach() {
+            console.log("findCoach function called"); 
+            
+            const game = document.getElementById("game-selection").value;
+            console.log("Selected game:", game); 
+
+            if (game) {
+                
+                window.location.href = `results.html?game=${game}`;
+            } else {
+                
+                alert("Please select a game to find a coach.");
+            }
+        }
+    </script>
+</body>
+</html>

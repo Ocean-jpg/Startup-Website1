@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Luke - Profile</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+/* CSS pour un fond noir sur la page entière */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212; /* Fond noir */
+    font-family: Arial, sans-serif;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent pour le cadre */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image du coach */
+.profile-image {
+    flex-shrink: 0;
+    margin-right: 30px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden; /* Masque les parties débordantes */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adapte l'image sans la déformer */
+}
+
+.profile-details h1 {
+    font-size: 24px;
+    color: #222; 
+    margin-bottom: 10px;
+}
+
+.profile-details p { 
+    font-size: 16px;
+    color: #333;
+}
+
+.profile-details ul {
+    font-size: 16px;
+    color: #333; 
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.profile-details h2 {
+    font-size: 18px;
+    color: #444; 
+    margin-top: 15px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+</style>
+<body>
+    <div class="profile-container">
+        <div class="profile-image">
+            <img src="images/luke.jpg" alt="Coach Luke"> 
+        </div>
+        <div class="profile-details">
+            <h1>Coach Luke</h1>
+            <p><strong>Expert in CS:GO</strong></p>
+            <p>With a background in professional CS:GO tournaments, I'm dedicated to helping players master tactical gameplay and team strategies. I help plaers have a better aim, positioning, and game sense to dominate in competitive matches.</p>
+
+            <h2>Main Domains</h2>
+            <ul>
+                <li>Precision aiming and reflex training</li>
+                <li>Map awareness and positioning</li>
+                <li>Team strategies and communication</li>
+            </ul>
+
+            <h2>Formation</h2>
+            <p>None</p>
+
+            <h2>Language</h2>
+            <p>English, German</p>
+
+            <a href="index.html" class="back-button">Return</a>
+        </div>
+    </div>
+</body>
+</html>

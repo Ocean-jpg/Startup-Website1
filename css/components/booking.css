@@ -1,0 +1,92 @@
+
+.booking-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.booking-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.calendar {
+    display: flex;
+    overflow-x: auto;
+}
+
+.calendar-days {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.day-column {
+    min-width: 120px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.day-column h3 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.day-column span {
+    font-weight: normal;
+    font-size: 12px;
+    color: #888;
+}
+
+.time-slot {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    margin: 5px 0;
+    background-color: #e0f7fa;
+    color: #00796b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.time-slot:hover {
+    background-color: #b2ebf2;
+}
+
+.time-slot.selected {
+    background-color: #0066ff;
+    color: #ffffff;
+}
+
+.time-slot.disabled {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.validate-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #00796b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.validate-button:hover {
+    background-color: #004d40;
+}
